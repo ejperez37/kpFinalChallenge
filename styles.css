@@ -30,6 +30,7 @@ h1 {
     font-size: 5.625rem;
     font-weight: 700;
     color: #fff;
+    margin-block: .5em;
 }
 
 h4 {
@@ -49,6 +50,11 @@ main {
 img {
     max-width: 100%;
     align-self: center;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
 }
 
 .flex {
@@ -178,7 +184,7 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     position: relative;
 }
 
@@ -241,14 +247,77 @@ img {
     font-family: 'Oswald', sans-serif;
     color: #fff;
     text-align: center;
-}
-
-.footer-list {
-    list-style: none;
-    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .footer-item {
     margin: 1em 0;
     font-size: 1rem;
+}
+
+@media (min-width: 700px) {
+    .primary-content {
+        padding: 1em;
+    }
+    
+    .primary-content-title {
+        text-align: left;
+    }
+
+    .sidecards {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+        padding-top: 1em;
+    }
+
+    .sidecard + .sidecard {
+        margin-left: 1em;
+    }
+
+    .all-footer-lists {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer {
+        padding: 1em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .middle-banner {
+        display: flex;
+    }
+
+    .spaceFix {
+        justify-content: center;
+    }
+    
+    .main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .primary-content {
+        width: 60%;
+    }
+
+    .sidecards {
+        flex-direction: column;
+        width: 35%;
+        margin-inline: 0;
+        padding-top: 1em;
+        padding-bottom: 0;
+        justify-content: normal;
+    }
+
+    .sidecard + .sidecard {
+        margin-left: 0;
+    }
+
+    .footer-text {
+        justify-content: space-between;
+    }
+
 }
