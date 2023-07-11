@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <div class="container row">
+        <div class="container row flex">
             <button class="nav-toggle" aria-label="open navigation">
                 <span class="hamburger"></span>
             </button>
@@ -33,7 +33,7 @@
     <section class="hero">
         <div class="container row">
             <div class="hero__title">
-                <h1>Responsive layouts don’t have to be a struggle</h1>
+                <h1>Responsive layouts <span class="colored-title">don’t have to be a struggle</span></h1>
             </div>
             <div class="hero__text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -46,7 +46,7 @@
         <div class="container row">
             <h3 class="middle-banner-title">Mobile-first</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nesciunt quibusdam consequatur fugit, minima, debitis sint laborum ipsum, ea necessitatibus quos temporibus numquam quia exercitationem!</p>
-            <h3 class="middle-banner-title">Efficeint</h3>
+            <h3 class="middle-banner-title">Efficient</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo et facilis hic repellendus porro nam, suscipit ipsam odit inventore accusamus doloremque maiores debitis id aut!</p>
             <h3 class="middle-banner-title">Done right</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet atque soluta fuga nesciunt quam, doloribus exercitationem! Totam, laudantium. Possimus cupiditate error et vero incidunt voluptates!</p>
@@ -57,10 +57,10 @@
         <section class="primary-content">
             <h3 class="primary-content-title">It doesn't have to be so hard</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempora, fuga repellat dolorem quae veniam voluptatum magni qui, ad assumenda illo fugit harum. Dignissimos quod voluptas voluptates unde sequi assumenda sed consequuntur ipsum labore corporis dolor, in repudiandae, numquam minus tenetur eveniet harum beatae nihil et iure aspernatur cum. Labore?</p>
-            <img src="images/the-img.jpg" alt="stock image of mock-up websites">
+            <img src="images/the-image.jpg" alt="stock image of mock-up websites">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quos dicta ullam asperiores eos nobis pariatur nulla, exercitationem earum aperiam fuga dolore ipsam? Voluptates possimus nisi nesciunt commodi culpa ea exercitationem accusantium assumenda, eaque autem cumque ex suscipit ipsa deleniti eveniet error, enim molestiae ratione velit quaerat libero tempore. Tempore?</p>
         </section>
-        <aside class="sidecards">
+        <section class="sidecards">
             <div class="sidecard">
                 <h3 class="sidecard-title">Break it down</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
@@ -73,38 +73,40 @@
                 <h3 class="sidecard-title">Build it up</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
             </div>
-        </aside>
+        </section>
     </main>
 
-    <footer class="footer container row">
+    <section class="footer container row">
         <div class="footer-title">
             <h2>just scratching the surface</h2>
         </div>
         <div class="footer-text">
-            <h4>About our company</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            <div class="footer-about"></div>
+                <h4>About our company</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
             <h4>Getting around</h4>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+            <ul class="footer-list">
+                <li class="footer-item">Home</li>
+                <li class="footer-item">About</li>
+                <li class="footer-item">Contact</li>
             </ul>
             <h4>Other things</h4>
-            <ul>
-                <li>Lorem ipsum</li>
-                <li>dolor</li>
-                <li>sit amet</li>
-                <li>consectetur</li>
+            <ul class="footer-list">
+                <li class="footer-item">Lorem ipsum</li>
+                <li class="footer-item">dolor</li>
+                <li class="footer-item">sit amet</li>
+                <li class="footer-item">consectetur</li>
             </ul>
             <h4>And more</h4>
-            <ul>
-                <li>Lorem ipsum</li>
-                <li>dolor</li>
-                <li>sit amet</li>
-                <li>consectetur</li>
+            <ul class="footer-list">
+                <li class="footer-item">Lorem ipsum</li>
+                <li class="footer-item">dolor</li>
+                <li class="footer-item">sit amet</li>
+                <li class="footer-item">consectetur</li>
             </ul>
         </div>
-    </footer>
+    </section>
 
     <script src="main.js"></script>
 

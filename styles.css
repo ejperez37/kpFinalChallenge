@@ -1,9 +1,254 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
 
 :root {
-
+--darkest-color: #2E323F;
+--darker-color: #3B4050;
+--dark-color: #6F737F;
+--light-color: #A59678;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--darkest-color);
+}
+
+header {
+    background-color: var(--darkest-color);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125rem;
+    padding: 1em 0;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5.625rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--light-color);
+    font-size: 1rem;
+}
+
+section {
+    padding: 2em 1em;
+}
+
+main {
+    font-size: 1.3125rem;
+}
+
+img {
+    max-width: 100%;
+    align-self: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.hero__text {
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #fff;
+    background-color: var(--light-color);
+    padding: .5em 1.5em;
+    border-radius: 100px;
+    font-family: "Oswald", sans-serif;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    color: white;
+    transition: opacity 250ms ease;
+    order: 5;
+    position: relative;
+    align-self:first baseline;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+.nav__list {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: less bold;
+}
+
+.nav__list--secondary {
+    margin-top: 1.25em;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    opacity: .75;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav__link--button {
+    padding: .4em 1em;
+    border-radius: 100px;
+    background-color: var(--light-color);
+    color: #fff; 
+}
+
+.nav__item {
+    margin: .75em 0;
+}
+
+.logo {
+    height: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    position: relative;
+}
+
+.colored-title {
+    color: var(--light-color);
+}
+
+.hero {
+    background-color: var(--darker-color);
+}
+
+.middle-banner {
+    background-color: #b8bcca9e;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.middle-banner-title {
+    color: var(--light-color);
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.primary-content-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.sidecards {
+    text-align: center;
+}
+
+.sidecard {
+    background-color: var(--darker-color);
+    color: #fff;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.sidecard-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.footer {
+    background-color: var(--darker-color);
+    color: var(--dark-color)
+}
+
+.footer-text {
+    font-size: 1rem;
+}
+
+.footer-title {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-list {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-item {
+    margin: 1em 0;
+    font-size: 1rem;
 }
