@@ -303,8 +303,8 @@ ul {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-inline: 1em;
-        padding-top: 1em;
+        margin-inline: .75em;
+        padding-top: 1.25em;
     }
 
     .nav__list--secondary {
