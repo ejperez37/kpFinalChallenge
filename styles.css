@@ -22,7 +22,7 @@ header {
     background-color: var(--darkest-color);
     font-family: 'Oswald', sans-serif;
     font-size: 1.125rem;
-    padding: 1em 0;
+    padding: 1em;
 }
 
 h1 {
@@ -59,6 +59,7 @@ ul {
 
 .flex {
     display: flex;
+    justify-content: space-between;
 }
 
 .hero__text {
@@ -155,7 +156,7 @@ ul {
 }
 
 .nav__list--secondary {
-    margin-top: 1.25em;
+    margin-top: 1em;
 }
 
 .nav__link:hover,
@@ -286,12 +287,40 @@ ul {
 }
 
 @media (min-width: 1000px) {
-    .middle-banner {
+    .nav-toggle {
+        display: none;
+    }
+    
+    .nav {
+        visibility: visible;
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
     }
 
-    .spaceFix {
-        justify-content: center;
+    .nav__list {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline: 1em;
+        padding-top: 1em;
+    }
+
+    .nav__list--secondary {
+        margin-top: 0;
+    }
+
+    .nav__item {
+        align-self: flex-end;
+    }
+
+    .nav__item + .nav__item {
+        margin-left: 1em;
+    }
+
+    .middle-banner {
+        display: flex;
     }
     
     .main {
@@ -319,5 +348,4 @@ ul {
     .footer-text {
         justify-content: space-between;
     }
-
 }
